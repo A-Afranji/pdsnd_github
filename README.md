@@ -1,5 +1,6 @@
 ### Date created
-14/09/2023
+The project was created on 14/08/2023
+The README file was created on 14/09/2023
 
 ### Project Title
 Bike Share Data Analysis
