@@ -19,7 +19,7 @@ def get_filters():
     # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs:
     city = input("Insert a city from (chicago, new york city, washington): " ).lower()
     while city not in CITY_DATA.keys():
-        print("Invalid city name")
+        print("Invalid city name !!")
         city = input("Insert a city from: (chicago, new york city, washington) " ).lower()
     
 
@@ -30,7 +30,7 @@ def get_filters():
         if month in months:
             break
         else:
-            print("Invalid month")
+            print("Invalid month !!")
     # TO DO: get user input for day of week (all, monday, tuesday, ... sunday):
     days = ['sunday','monday','tuesday','wednesday','thursday','friday','saturday','all']
     while True:
@@ -38,7 +38,7 @@ def get_filters():
         if day in days:
             break
         else:
-            print("Invalid day")
+            print("Invalid day !!")
             
     print('-'*40)
     return city, month, day
@@ -162,7 +162,7 @@ def display_data(df):
     i = 0
     user_input = input("Do you want to display 5 rows of raw data?, please insert yes or no").lower()
     if user_input not in ["yes","no"]:
-        print("Invalid input, please insert yes or no")
+        print("Invalid input, please insert yes or no !!")
         user_input = input("Do you want to display 5 rows of raw data?, please insert yes or no").lower()
     
     elif user_input != "yes":
